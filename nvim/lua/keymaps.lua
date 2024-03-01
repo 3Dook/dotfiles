@@ -54,3 +54,6 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope grep_string<cr>") -- find string u
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
+-- ## Explorer
+keymap.set("n", "<leader>e", ":Neotree toggle<CR>", {})
+keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
