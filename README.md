@@ -33,3 +33,5 @@ sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 4. Install nerd font 
     1. windows is the easiest - install then right click to install - then set it on the terminal 
     2. other terminal emulators?
+5. Node
+    1. curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - sudo apt-get install -y nodejs
