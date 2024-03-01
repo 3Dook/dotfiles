@@ -15,10 +15,9 @@ return {
     },
   },
   {
-		"hrsh7th/nvim-cmp",
-		config = function()
-		end,
+    "neovim/nvim-lspconfig",
 		dependencies = {
+      { "hrsh7th/nvim-cmp", lazy = true},
 			{ "onsails/lspkind-nvim", lazy = true },
 			{ "hrsh7th/cmp-buffer", lazy = true },
 			{ "hrsh7th/cmp-cmdline", lazy = true },
@@ -26,10 +25,6 @@ return {
 			{ "hrsh7th/cmp-path", lazy = true },
 			{ "hrsh7th/vim-vsnip", lazy = true },
 		},
-	},
-  {
-    "neovim/nvim-lspconfig",
-
     config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
       local lspconfig = require("lspconfig")

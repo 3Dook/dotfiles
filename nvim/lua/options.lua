@@ -1,5 +1,6 @@
 local opt = vim.opt -- for conciseness 
 
+-- clipboard
 -- line numbers
 opt.number = true -- line numbers 
 
@@ -28,6 +29,6 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- search and highlighting
 opt.iskeyword:append("-") -- consider string-string as whole word
-     
+
 -- disable swap files
 opt.swapfile = false
