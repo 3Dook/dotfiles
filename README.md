@@ -30,4 +30,6 @@ sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 		3.b git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 		3.c git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 	
-	
+4. Install nerd font 
+    1. windows is the easiest - install then right click to install - then set it on the terminal 
+    2. other terminal emulators?
