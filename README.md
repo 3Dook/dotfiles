@@ -36,3 +36,5 @@ sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 5. Node
     1. curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash
     2. sudo apt-get install -y nodejs
+6. git 
+    1. git config --global credential.helper store
