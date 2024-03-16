@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias zshconfig="mate ~/.zshrc"
-alias desktop="cd /mnt/c/Users/ddd/Desktop"
+alias desktop="cd /mnt/c/Users/dook/Desktop"
+alias desktop2="cd /mnt/c/Users/ddd/Desktop"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
