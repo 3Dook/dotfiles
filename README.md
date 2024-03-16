@@ -35,3 +35,9 @@ sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
     2. other terminal emulators?
 5. Node
     1. curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - sudo apt-get install -y nodejs
+
+6. CLI - fzf
+    1. ctrl t - search directory
+    2. ctrl r - search previous history
+    3. ** tab - able to auto complete 
+

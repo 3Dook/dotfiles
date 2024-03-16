@@ -100,9 +100,16 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+
 # Example aliases
 alias zshconfig="mate ~/.zshrc"
 alias desktop="cd /mnt/c/Users/dook/Desktop"
 alias desktop2="cd /mnt/c/Users/ddd/Desktop"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# fzf command stuff
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPS="--extend"
+export FZF_DEFAULT_COMMAND="fd --type f"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
