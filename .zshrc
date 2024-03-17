@@ -5,6 +5,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+#path for random thing
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -110,6 +112,10 @@ alias desktop2="cd /mnt/c/Users/ddd/Desktop"
 # fzf command stuff
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPS="--extend"
-export FZF_DEFAULT_COMMAND="fd --type f"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+#export FZF_DEFAULT_COMMAND="fd --type f"
+#export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
+#zoxide
+export PATH="$HOME/.local/bin:$PATH"
+eval "$(zoxide init zsh)"
+eval "$(zoxide init zsh)"
