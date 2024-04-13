@@ -43,3 +43,12 @@ sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
     1. ctrl t - search directory
     2. ctrl r - search previous history
     3. ** tab - able to auto complete 
+
+# -----------------------------------------------------------------------------
+# Plugin Manager - https://github.com/tmux-plugins/tpm
+# If you didn't use my dotfiles install script you'll need to:
+#   Step 1) git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+#   Step 2) Reload tmux if it's already started with `r
+#   Step 3) Launch tmux and hit `I (capital i) to fetch any plugins
+# -----------------------------------------------------------------------------
+8. ln -s ~/.config/.tmux.conf ~/.tmux.conf
