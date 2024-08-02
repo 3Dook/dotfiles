@@ -37,6 +37,22 @@ return {
       lspconfig.lua_ls.setup({
         capabilities = capabilities
       })
+      -- adding godot functionality to use the godot editor as the lsp server
+      lspconfig.gdscript.setup(capabilities)
+--      local gdscript_config = {
+--        capabilities = capabilities,
+--        settings = {},
+--      }
+--    if vim.fn.has 'win32' == 1 then
+--        print('why')
+--        -- window specific. requires nmap install ('winget instlal nmap')
+--        gdscript_config['cmd'] = { 'ncat', 'localhost', os.getenv 'GDScript_Port' or '6005'}
+--      end
+--      lspconfig.gdscript.setup(gdscript_config)
+      -- https://github.com/lucasecdb/godot-wsl-lsp
+     -- lspconfig.gdscript.setup({
+     --     cmd = { "godot-wsl-lsp" },
+     -- })
       -- LSPinfo - tells you what lsp are connected to the buffer
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})

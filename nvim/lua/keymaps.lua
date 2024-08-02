@@ -40,10 +40,10 @@ keymap.set("v", "<A-up>", ":m-1<CR>gv=gv") -- shift visual block up
 keymap.set("v", "<A-j>", ":m+1<CR>gv=gv") -- shift visual block down
 keymap.set("v", "<A-down>", ":m+1<CR>gv=gv") -- shift visual block down
 
-keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv") -- shift visual block up
+keymap.set("x", "<A-k>", ":move '<-2<CR>gv=gv") -- shift visual block up
 keymap.set("x", "<A-up>", ":m-2<CR>gv=gv") -- shift visual block up
-keymap.set("x", "<A-j>", ":move '>+2<CR>gv-gv") -- shift visual block down
-keymap.set("x", "<A-down>", ":move '>+2<CR>gv-gv") -- shift visual block down
+keymap.set("x", "<A-j>", ":m '>+1<CR>gv=gv") -- shift visual block down
+keymap.set("x", "<A-down>", ":m '>+1<CR>gv=gv") -- shift visual block down
 
 
 -- ## TELESCOPE
