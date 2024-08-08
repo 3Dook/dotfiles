@@ -7,8 +7,8 @@ a small collection of dev files
 2. download nvim - text editor note it should be >nvim. 0.9 - universal linux download instructions
 	2.1 - run from home
 		2.a curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-chmod u+x nvim.appimage
-./nvim.appimage
+            chmod u+x nvim.appimage
+            ./nvim.appimage
 		2.b 
 		# Optional: exposing nvim globally.
 sudo mv squashfs-root /
