@@ -19,6 +19,7 @@ return {
       vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 
       require("telescope").load_extension("ui-select")
+
     end,
   },
 }

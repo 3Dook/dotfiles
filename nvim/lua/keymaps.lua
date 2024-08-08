@@ -57,3 +57,5 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 -- ## Explorer
 keymap.set("n", "<leader>e", ":Neotree toggle<CR>", {})
 keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
+-- oil
+keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
