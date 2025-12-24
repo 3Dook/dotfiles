@@ -2,72 +2,47 @@
 
 a small collection of dev files
 
-# setting up helper notes for future
-1. download your emulator
-2. download nvim - text editor note it should be >nvim. 0.9 - universal linux download instructions
-	2.1 - run from home
-		2.a curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-            chmod u+x nvim.appimage
-            ./nvim.appimage
-		2.b 
-		# Optional: exposing nvim globally.
-sudo mv squashfs-root /
-sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
+## notes
+### Scripts
+    # check_tools
+        - will feature list of programs to make sure that they're installed. 
 
-3. download shell
-	Ubuntu
-	3.1 sudo apt update
-	3.2 sudo apt upgrade
-	3.3 sudo install zsh
-	3.4 chsh -s $(which zsh)
-	3.5 Link zshrc file to configs
-		3.a mv ~/.zshrc ~/.config
-		3.b cd .config
-		3.c ls -a
-		3.d ln -s ~/.config/.zshrc ~/.zshrc
-	3.6 from the home directory download omgmyZsh
-		3.a sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-		3.b git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-		3.c git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-	
-4. Install nerd font 
-    1. windows is the easiest - install then right click to install - then set it on the terminal 
-    2. other terminal emulators?
-5. Node
+### Shell 
+    #zsh 
+    #zsh-autosuggestions, zsh-syntax-highlighting
+    sudo install zsh
+#chsh -s $(which zsh)
+#mv ~/.zshrc ~/.config
+#cd .config
+#ls -a
+    ln -s ~/.config/.zshrc ~/.zshrc
 
-    1. curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash
-    2. sudo apt-get install -y nodejs
-6. git 
-    1. git config --global credential.helper store
-7. CLI - fzf
-    1. ctrl t - search directory
-    2. ctrl r - search previous history
-    3. ** tab - able to auto complete 
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    sudo apt install fzf
+    curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+### CLI
+    fzf, ripgrep, git, 
+    - sudo apt install ripgrep
+    sudo apt install fd-find
+    # ln -s $(which fdfind) ~/.local/bin/fd // sometimes the fdfind needs to be set
+    sudo apt install bpytop
+    git config --global credential.helper store
+### text editor
+    nvim
+### file manager 
+### Terminal multiplexer
+    tmux
 
-# -----------------------------------------------------------------------------
-# Plugin Manager - https://github.com/tmux-plugins/tpm
-# If you didn't use my dotfiles install script you'll need to:
-#   Step 1) git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-#   Step 2) Reload tmux if it's already started with `r
-#   Step 3) Launch tmux and hit `I (capital i) to fetch any plugins
-# -----------------------------------------------------------------------------
-8. ln -s ~/.config/.tmux.conf ~/.tmux.conf
-
-
-# note to self
-# Find and set branch name var if in git repository.
-function git_branch_name()
-{
-  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
-  if [[ $branch == "" ]];
-  then
-    :
-  else
-    echo '- ('$branch')'
-  fi
-}
-
-# Enable substitution in the prompt.
-setopt prompt_subst
-
-then add $(git_branch_name) to the prompt to add git branches into the terminal line
+sudo apt install libevent-dev
+sudo apt install bison byacc
+sudo apt-get install libncurses5-dev libncursesw5-dev
+sudo apt-get install ncurses-bin build-essential
+sudo apt install tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+ln -s ~/.config/.tmux.conf ~/.tmux.conf
+### Software
+    - node
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash
+sudo apt-get install -y nodejs

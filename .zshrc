@@ -12,7 +12,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="duellj"
+#ZSH_THEME="duellj"
+ZSH_THEME="frontcube"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -97,25 +98,34 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
+
+#options
+unsetopt beep
 
 # Example aliases
 alias zshconfig="mate ~/.zshrc"
-alias desktop="cd /mnt/c/Users/dook/Desktop"
-alias desktop2="cd /mnt/c/Users/ddd/Desktop"
+#alias desktop="cd /mnt/c/Users/dook/Desktop"
+#alias desktop2="cd /mnt/c/Users/ddd/Desktop"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#alias for bat
+alias bat="batcat"
 
 # fzf command stuff
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPS="--extend"
 #export FZF_DEFAULT_COMMAND="fd --type f"
 #export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+source /usr/share/doc/fzf/examples/key-bindings.zsh
 
 #zoxide
 export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init zsh)"
 eval "$(zoxide init zsh)"
+
+
