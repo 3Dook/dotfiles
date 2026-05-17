@@ -126,6 +126,5 @@ source /usr/share/doc/fzf/examples/key-bindings.zsh
 #zoxide
 export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init zsh)"
-eval "$(zoxide init zsh)"
 
 
